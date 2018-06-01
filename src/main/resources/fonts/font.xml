@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--suppress XmlUnboundNsPrefix -->
+<fontFamilies>
+  <fontFamily name="ipaexg">
+    <normal>fonts/ipaexg.ttf</normal>
+    <pdfEncoding>Identity-H</pdfEncoding>
+    <pdfEmbedded>true</pdfEmbedded>
+  </fontFamily>
+  <fontFamily name="ipaexm">
+    <normal>fonts/ipaexm.ttf</normal>
+    <pdfEncoding>Identity-H</pdfEncoding>
+    <pdfEmbedded>true</pdfEmbedded>
+  </fontFamily>
+</fontFamilies>

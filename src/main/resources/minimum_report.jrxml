@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b3c094d2-5885-4935-9d12-f11b116ec379">
+  <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+  <field name="text" class="java.lang.String"/>
+  <field name="image" class="java.io.InputStream"/>
+  <background>
+    <band splitType="Stretch"/>
+  </background>
+  <detail>
+    <band height="700" splitType="Immediate">
+      <textField isStretchWithOverflow="true" isBlankWhenNull="true">
+        <reportElement x="0" y="560" width="550" height="20" uuid="8e6b1e1f-23d9-4092-a24c-3e65bd370847"/>
+        <box padding="4">
+          <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+          <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+          <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+          <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+        </box>
+        <textElement>
+          <font fontName="ipaexg" size="20"/>
+        </textElement>
+        <textFieldExpression><![CDATA[$F{text}]]></textFieldExpression>
+      </textField>
+      <frame>
+        <reportElement positionType="Float" x="260" y="600" width="36" height="36" uuid="eea80663-b2e4-4693-a130-e7954de46794">
+          <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+        </reportElement>
+        <box>
+          <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+          <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+          <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+          <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+        </box>
+        <image onErrorType="Blank">
+          <reportElement x="2" y="2" width="32" height="32" uuid="ca15356c-46e9-490e-98f4-e8e2efd2299a"/>
+          <imageExpression><![CDATA[$F{image}]]></imageExpression>
+        </image>
+      </frame>
+    </band>
+  </detail>
+</jasperReport>
