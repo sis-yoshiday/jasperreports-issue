@@ -2,6 +2,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -17,10 +19,9 @@ import static java.util.Collections.singleton;
 public class Main {
 
   private static final String TEXT_SHORT = "abc";
-  private static final String TEXT_LONG =
-      "abc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\n" +
-          "abc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\n" +
-          "abc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\nabc\n";
+  private static final String TEXT_LONG = IntStream.range(0, 36).boxed()
+      .map(i -> "abc\n")
+      .collect(Collectors.joining(""));
 
   public static void main(String[] args) throws IOException, JRException {
     tryMinimumExample();// but not represent
